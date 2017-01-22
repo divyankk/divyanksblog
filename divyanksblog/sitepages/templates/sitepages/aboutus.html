@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title> Welcome to about us </title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav" >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{%url 'home' %}">Divyank's Blog</a>
+          </div>
+          <div class="collapse navbar-collapse" id="mynav">
+            <ul class="nav navbar-nav">
+              <li><a href="{% url 'aboutus' %}">About</a></li>
+              <li><a href="https://www.facebook.com/divyank.khandelwal.7">Facebook</a></li>
+            </ul>
+          </div>  <!-- href="{% url 'home' %}" -->
+      </div>
+  </nav>
+  <div class="container">
+      <h1 class="text-center"> Welcome to QMG's Blog !!</h1>
+      {% load static %}
+      <img src="{% static 'sitepages/QMG.jpg' %}" class="img-responsive center-block" style="max-height:300px;"/>
+      <h2 class="text-center">We break the code!!</h2>
+      <hr />
+      <font color='navy blue'> <p style="font-family:'Serif'"> Hey!! Thanks for visiting this page. Following are the details of QMG Pune team. There are total 14 members in QMG Pune. Kanchan Mohitey is the head of QMG department. DB server team includes Tushar Ahuja, Neha Sharma, Prabhat Sahu and Rajkumar Raghuwanshi.
+      PEM team contains Priyanka Shendge, Vishal Sawale, Navnath Gadakh. EFM team involves Kanchan Sawarkar, Shaktisikha Sahoo. Ark team includes Divya Varughese, Yogesh Mahajan.
+      XDB team comprises of Divyank Khandelwal. </p> </font>
+
+
+      <br/>
+      <br/>
+
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
